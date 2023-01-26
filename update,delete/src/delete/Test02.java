@@ -12,7 +12,7 @@ public class Test02 {
 		int no = 2;
 		String sql = "delete student where no=?";
 		Object[] param = {no};
-		int n = jdbcTemplate.update(sql,no); 
+		int n = jdbcTemplate.update(sql,param); 
 		if(n>0)
 		{
 			System.out.println("삭제완료");	
